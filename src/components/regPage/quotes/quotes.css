@@ -1,0 +1,58 @@
+.quotes {
+  width: 100%;
+  min-height: 100vh;
+  background:
+    url("img/section-3-bg.svg") bottom/100% no-repeat,
+    linear-gradient(358.26deg, #242a3a -2.15%, #2a3348 98%);
+  padding-bottom: 50px;
+}
+
+.quotes-text {
+  width: 1315px;
+  color: white;
+  padding-top: 40px;
+  margin: auto;
+  text-align: center;
+}
+
+.quotes-link {
+  width: 1315px;
+  display: block;
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  margin: auto;
+  margin-top: 50px;
+  text-decoration: none;
+}
+
+.quotes-link:visited {
+  color: #363d53;
+}
+
+.quote-element:lang(ru) {
+  color: white;
+}
+
+.quote-element:lang(en) q {
+  color: #ffdeb7;
+}
+
+.quotes-body {
+  padding: 110px 113px;
+  margin: auto;
+  margin-top: 100px;
+  background: #353f5a;
+  width: 1315px;
+  list-style: none;
+}
+
+.quote-author {
+  color: #fd9b40;
+  margin-top: 50px;
+  text-align: end;
+}
+
+.quote-element:last-of-type {
+  margin-top: 150px;
+}

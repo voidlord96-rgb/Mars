@@ -1,0 +1,109 @@
+.profession {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(180deg, #222836 0%, #293146 100%);
+}
+
+.profession-title {
+  width: 1315px;
+  margin: auto;
+  padding: 100px 140px 0 140px;
+  display: flex;
+  color: white;
+}
+
+.profession-type-frame {
+  position: relative;
+  height: 2rem;
+  overflow: hidden;
+  flex-grow: 1;
+}
+
+.profession-type-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: #fd9b40;
+  list-style: none;
+  animation: proffesion-changer 3s linear 0s infinite;
+}
+
+.profession-type {
+  font-size: 2rem;
+  line-height: 2rem;
+}
+
+.profession-cards {
+  width: 100%;
+}
+
+.profession-cards-container {
+  margin: 100px auto 0 auto;
+  display: flex;
+  justify-content: space-around;
+  max-width: 1315px;
+}
+
+.profession-card {
+  position: relative;
+  background: #39435c;
+  padding: 50px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: center;
+  width: 340px;
+}
+
+.prof-card-logo {
+  height: 200px;
+}
+
+.prof-card-title {
+  color: white;
+  font-size: 1rem;
+}
+
+.profession-card summary {
+  color: #fd9b40;
+  font-size: 1rem;
+}
+
+.profession-card details {
+  color: white;
+  font-size: 0.5rem;
+}
+
+.profession-card details[open] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #39435c;
+  padding: 50px 30px;
+}
+
+.profession-card:nth-of-type(2) {
+  transform: scale(1.1);
+  border: 2px solid white;
+}
+
+.back {
+  position: fixed;
+  top: 70px;
+  left: 0;
+  width: 236px;
+  padding: 34px 0;
+  background: #39435c;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+@keyframes proffesion-changer {
+  100% {
+    top: -6rem;
+  }
+}

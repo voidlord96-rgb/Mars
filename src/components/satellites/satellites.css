@@ -1,0 +1,82 @@
+.satellites {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffb762;
+  padding-bottom: 80px;
+  overflow: hidden;
+}
+.satellites-title {
+  width: 100%;
+  text-align: center;
+  margin: 25px 0 50px 0;
+}
+.satellites-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.satellites-orbit {
+  width: 617px;
+  height: 617px;
+  border: 1px solid white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  animation: rotate-orbite 10s linear 0s infinite;
+}
+.satellit-phobos {
+  position: absolute;
+  left: -50px;
+  bottom: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: rotate-title 10s linear 0s infinite;
+}
+.satellit-phobos-img {
+  width: 95px;
+  margin-bottom: 11px;
+}
+.satellit-deimos {
+  position: absolute;
+  left: 15%;
+  bottom: -3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: rotate-title 10s linear 0s infinite;
+}
+.satellit-deimos-img {
+  width: 60px;
+  margin-bottom: 11px;
+}
+.planet-mars {
+  width: 410px;
+  animation: rotate-title 10s linear 0s infinite;
+}
+.sattelit-text {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.55rem;
+}
+
+@keyframes rotate-orbite {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate-title {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}

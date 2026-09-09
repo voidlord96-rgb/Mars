@@ -1,0 +1,85 @@
+.earth {
+  background-color: #293246;
+  position: relative;
+}
+.earth__header {
+  height: 331px;
+  background-image: url(../img/section-5-bg-top.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.earth__footer {
+  height: 302px;
+  background-image: url(../img/section-5-bg-bottom-earth.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.earth__button {
+  background-color: #394c76;
+  display: block;
+  width: 40%;
+  line-height: 2rem;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  margin: auto;
+  position: relative;
+  top: 14%;
+  background: linear-gradient(
+    90deg,
+    #ffb762 0%,
+    #cf54a5 27.6%,
+    #263b6c 73.96%,
+    #ffb762 100%
+  );
+  background-size: 300%;
+  animation: button-animation 6s linear 0s infinite;
+}
+.earth__content {
+  padding: 3%;
+  display: flex;
+  justify-content: flex-start;
+}
+.earth__rocket {
+  position: absolute;
+  top: 50%;
+  right: 30%;
+  animation: contact-rocket-move 3s linear 0s infinite alternate;
+}
+
+.earth__content p {
+  width: 70%;
+  font-size: 2rem;
+  line-height: 3.1rem;
+  padding: 3%;
+  color: white;
+}
+
+@keyframes contact-rocket-move {
+  0% {
+    top: 15%;
+    transform: rotate(180deg);
+  }
+  40% {
+    top: 30%;
+    transform: rotate(180deg);
+  }
+  60% {
+    top: 45%;
+    transform: rotate(0);
+  }
+  100% {
+    top: 75%;
+    transform: rotate(0);
+  }
+}
+@keyframes button-animation {
+  0% {
+    background-position-x: 0%;
+  }
+  100% {
+    background-position-x: 300%;
+  }
+}

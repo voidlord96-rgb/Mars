@@ -1,0 +1,46 @@
+.side-nav {
+    height: calc(100vh - 162px);
+    width: 138px;
+    margin: 81px 0;
+    position: fixed;
+    top:0;
+    right:0;
+    background: #3E4761;
+    padding: 50px 30px;
+    display: flex;
+    overflow: hidden;
+    transition: 0.5s;
+    z-index: 10000;
+}
+.nav-text {
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    margin:0 auto;
+    margin-top: 170px;
+    color: white;
+    font-size: 0.5rem;
+
+}
+.nav-right {
+    margin-left: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.side-nav:hover{
+   width: 430px;
+}
+.item {
+    font-size: 1rem;
+    display:block;
+    margin: 82px 0;
+    color: white;
+    text-decoration: none;
+    filter:blur(10px);
+    transition: 0.3s;
+}
+.item:hover{
+    filter:blur(0);
+}
