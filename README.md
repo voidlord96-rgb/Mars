@@ -1,16 +1,104 @@
-# React + Vite
+# Сайт о Марсе
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Информационный React-сайт о Марсе, его изучении, спутниках и перспективах колонизации. Проект создан по макету из Figma и реализован с использованием компонентного подхода React.
 
-Currently, two official plugins are available:
+## О проекте
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Сайт посвящён исследованию Марса и содержит несколько тематических разделов:
 
-## React Compiler
+* информация о планете и её характеристиках;
+* история и способы изучения Марса;
+* информация о марсоходах;
+* интерактивный блок со спутниками Фобосом и Деймосом;
+* перспективы колонизации Марса;
+* регистрационная страница с выбором направления деятельности;
+* информационные материалы и цитаты о пилотируемых полётах на Марс.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Данные вынесены в отдельный объект `state` и передаются в компоненты через `props`, благодаря чему структура данных отделена от отображения интерфейса.
 
-## Expanding the Oxlint configuration
+## Основные технологии
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+* **React** — создание компонентного пользовательского интерфейса;
+* **JavaScript** — логика приложения и работа с данными;
+* **React Router** — маршрутизация между страницами;
+* **Vite** — сборка и запуск проекта;
+* **HTML** — структура компонентов и элементов страницы;
+* **CSS** — стилизация и оформление интерфейса;
+* **JSX** — создание разметки внутри React-компонентов.
+
+## Реализовано
+
+* компонентная архитектура React;
+* передача данных через `props`;
+* централизованное хранение контента в объекте `state`;
+* маршрутизация с использованием `BrowserRouter`, `Routes`, `Route` и `NavLink`;
+* динамический вывод элементов через `map()`;
+* работа с массивами объектов;
+* деструктуризация данных;
+* динамический выбор изображений;
+* создание отдельных переиспользуемых компонентов;
+* разделение логики, данных и представления;
+* отдельная страница регистрации;
+* импорт и использование графических ресурсов.
+
+## Структура компонентов
+
+* `App` — главный компонент и маршрутизация;
+* `SideNav` — навигация сайта;
+* `Header` — главный экран;
+* `About` — информация о Марсе;
+* `Study` — изучение Марса и марсоходы;
+* `Satellites` — спутники Марса;
+* `Earth` — блок о колонизации;
+* `RegPage` — страница регистрации;
+* `Footer` — нижняя часть сайта;
+* `state` — источник данных для компонентов.
+
+## Цель проекта
+
+Практика разработки React-сайта с компонентной архитектурой, маршрутизацией и передачей данных через `props`, а также закрепление работы с динамическим отображением контента.
+
+## Дизайн
+
+[Открыть макет проекта в Figma](https://www.figma.com/design/AMj5mp7NTWLAxFFYhpdoUA/mars-main-page?node-id=29-36&t=ckOJxlQsymE2TyY9-1)
+
+## Скриншот
+
+<details>
+<summary>Развернуть</summary>
+
+![Mars Website](./Mars.png)
+
+</details>
+
+## Запуск проекта
+
+### 1. Клонирование репозитория
+
+```bash
+git clone https://github.com/voidlord96-rgb/Mars.git
+```
+
+### 2. Переход в папку проекта
+
+```bash
+cd Mars
+```
+
+### 3. Установка зависимостей
+
+```bash
+npm install
+```
+
+### 4. Запуск проекта
+
+```bash
+npm run dev
+```
+
+После запуска откройте адрес, который Vite покажет в терминале, обычно:
+
+```text
+http://localhost:5173/
+```
